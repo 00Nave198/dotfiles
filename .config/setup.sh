@@ -14,3 +14,8 @@ if [ $? = 0 ]; then
 fi;
 dotfiles checkout
 dotfiles config status.showUntrackedFiles no
+
+
+# Setup theme - Gets latest version
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.config/zsh/powerlevel10k
+
