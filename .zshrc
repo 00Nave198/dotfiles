@@ -10,7 +10,7 @@ fi
 
 
 # Reload current color scheme from wal
-(wal -r &)
+[ -f /usr/bin/wal ] && (wal -r &) 
 
 # Use powerlevel10k theme
 source ~/.config/zsh/powerlevel10k/powerlevel10k.zsh-theme
