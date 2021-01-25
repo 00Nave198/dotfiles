@@ -4,7 +4,6 @@
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
 #
-
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
@@ -201,6 +200,8 @@ set_from_resource $term_color15  color15
 
 
 bar {
+    status_command i3status
+	separator_symbol " | "
     colors {
         background $term_bg
         statusline $term_color7
@@ -213,8 +214,6 @@ bar {
         urgent_workspace 	$term_color4 	$term_color7 	$term_bg
         binding_mode      	$term_color4 	$term_color7 	$term_bg   
     }	
-    status_command i3status
-	separator_symbol " | "
 }
 
 # Colors 		<border>	<bg> 		<text>
@@ -233,7 +232,9 @@ gaps inner 10
 gaps outer 0
 smart_gaps on
 
-for_window [class=".*"] border pixel 0
+default_border pixel 1
+# Use this with a regex to disable borders on some windows
+# for_window [class=".*"] border pixel 0
 
 # Shutdown shit
 set $Locker i3lock-fancy-rapid 5 3 && sleep 1
@@ -255,5 +256,5 @@ mode "$mode_system" {
 
 bindsym $mod+0 mode "$mode_system"
 
-
+hide_edge_borders smart
 bindsym $mod+w exec firefox
