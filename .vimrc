@@ -21,6 +21,7 @@ Plug 'lervag/vimtex'
 call plug#end()
 
 let g:vimtex_view_method = 'zathura'
+let g:vimtex_view_automatic = 0
 let g:vimtex_compiler_latexmk = {
             \ 'build_dir' : '.texbuild',
             \}
