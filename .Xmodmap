@@ -1,0 +1,9 @@
+keycode 66 = Mode_switch
+keysym h = h H Left
+keysym l = l L Right
+keysym k = k K Up
+keysym j = j J Down
+keysym 4 = 4 dollar End
+keysym 0 = 0 parenright Home
+keysym x = x X Delete
+
