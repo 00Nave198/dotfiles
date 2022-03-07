@@ -1,8 +1,8 @@
 Xcursor.size: 32
-
+st.alpha: 10
 
 URxvt.scrollBar: false
-URxvt.transparent:   true
+URxvt.transparent: true
 URxvt.shading:       15
 URxvt.font:                     xft:MesloLGS NF:autohint=true:size=9
 URxvt.boldFont:                 xft:MesloLGS NF:autohint=true:bold:size=9
